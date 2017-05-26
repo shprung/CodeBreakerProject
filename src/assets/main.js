@@ -13,8 +13,15 @@ function guess() {
     
 }
 function showAnswer(win){
+	/*
+	Create a showAnswer function
+Create a function showAnswer that has one parameter. This function should set the innerHTML of the code label to the value of 
+the answer hidden input. In addition to this it should take the parameter as a true or false (indicating if the player won or lost) 
+if the parameter is true add success to code's className otherwise it should add failure. 
+(note the space before success and failure)
+	*/
 	let out = document.getElementById('code');
-	out.innerHTML="<strong>"+answer.value+"</strong>";
+	out.innerHTML=answer.value; // "<strong>"+answer.value+"</strong>";
 	out.className=win?"code success":"code failure";
 	showReplay();
 }
